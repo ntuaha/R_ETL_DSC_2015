@@ -51,7 +51,7 @@ mode        : selfcontained # {standalone, draft}
 從新聞所述，所以我們想要:
 
 *** =left
-從新聞所述，所以我們想要:
+### `你想知道什麼資料?`
  1. GDP
  2. 房貸餘額
  3. 股價
