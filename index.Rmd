@@ -25,44 +25,21 @@ mode        : selfcontained # {standalone, draft}
 - 玉山金控助理襄理
 - 2014 DSC R ETL講師
 
-
---- &twocol_dynamic w1:30% w2:66%
-## 故事的起源
-*** =left
-1. `房價真的太高了嗎?`
-*** =right
-<img src = './resources/figures/R_ETL_NEWS3.png' height="400px"></img>
-
-
-
---- &twocol_dynamic w1:30% w2:66%
-## 故事的起源
-*** =left
-1. 房價真的太高了嗎?
-2. `大熊被抓了`
-*** =right
-<img src = './resources/figures/R_ETL_NEWS_2.png' height="400px"></img>
-
---- &twocol_dynamic w1:30% w2:66%
-## 故事的起源
-*** =left
-1. 房價真的太高了嗎?
-2. 大熊被抓了
-3. `台灣房市真的要崩盤了嗎？`
-*** =right
-<img src = './resources/figures/R_ETL_NEWS_1.png' height="400px"></img>
-
-
-
-
 --- &vcenter
 
-<q>在論述台灣房市之前，身為一個`資料科學家`，第一步是了解問題</q>
+<q>在開始本次的課程之前，身為一個`資料科學家`，第一步是了解問題</q>
 
 
 --- &vcenter
 
 <q>本次，我們的問題是`房價真的太高了嗎?`</q>
+
+
+--- .quote
+
+<q>是否覺得很奇怪，跟好像似曾相識?</q>
+
+
 
 
 --- 
