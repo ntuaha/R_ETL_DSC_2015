@@ -40,18 +40,10 @@ mode        : selfcontained # {standalone, draft}
 <q>是否覺得很奇怪，跟好像似曾相識?</q>
 
 
-
-
 --- 
 
-還記得這個`新聞`吧？ 就從這裡開始
 <img src = './resources/figures/R_ETL_NEWS_1.png' height="400px"></img>
 
-
---- 
-
-## 資料在哪裡
-從上面`新聞`所述，所以我們想要:
 
 --- &twocol
 
@@ -59,18 +51,17 @@ mode        : selfcontained # {standalone, draft}
 從上面`新聞`所述，所以我們想要:
 
 *** =left
-### `你想知道什麼資料?`
+從新聞所述，所以我們想要:
  1. GDP
  2. 房貸餘額
  3. 股價
- 4. 新聞
- 5. 地價資訊
+ 4. 地價資訊
 
 
 --- &twocol
 
 ## 資料在哪裡
-從上面`新聞`所述，所以我們想要:
+從新聞所述，所以我們想要:
 
 *** =left
 ### `你想知道什麼資料?`
@@ -82,16 +73,10 @@ mode        : selfcontained # {standalone, draft}
 
 *** =right
 ### `可能的來源?`
- 1. 政府公開資料
+  - 政府公開資料
   - 主計處
   - 央行
- 2. 新聞
-  - 紙本報紙
-  - 電視新聞
-  - 電子新聞
- 3. 股市
-  - Yahoo Stock API
-   
+
 
 --- &vcenter
 
@@ -116,8 +101,6 @@ mode        : selfcontained # {standalone, draft}
 - `dplyr` 可用`類似SQL方法`操作data frome
 - `xts` 處理`時間`格式好用的套件
 - `gdata` 可以處理`Excel 2007`以上的文件
-- `quantmod` 可以處理`股市`資料
-- `stringr` `字串`相關處理
 
 
 --- .quote
@@ -128,7 +111,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## DSC的One Piece
 
-- `DSC2014Tutorial` R社群為了這次Tutorial製作的套件，所有的教材都在這了
+- `DSC2015Tutorial` R社群為了這次Tutorial製作的套件，所有的教材都在這了
 
 ```
 deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,"Imports"]
@@ -138,9 +121,9 @@ for(i in seq_along(pkgs)) {
   if (require(pkgs[i], character.only = TRUE)) next
   install.packages(pkgs[i], repo = "http://cran.csie.ntu.edu.tw")
 }
-install.packages('DSC2014Tutorial', 
+install.packages('DSC2015Tutorial', 
     repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
-library(DSC2014Tutorial)
+library(DSC2015Tutorial)
 ```
 
 安裝之後, 輸入以下指令就可以打開投影片:
