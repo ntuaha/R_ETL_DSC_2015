@@ -1480,9 +1480,7 @@ t2 = filter(t1,is.na(mortage_total_bal)==FALSE)
     <h2>接下來我們應該做(1/3) - 畫圖</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
-</code></pre>
-  
+      
 <div style='float:left;width:18%' >
  <ol>
 <li><code>畫圖</code></li>
@@ -1490,13 +1488,13 @@ t2 = filter(t1,is.na(mortage_total_bal)==FALSE)
 
 </div>    
 <div style='float:right;width:78%'>
- <pre><code class="r">library(ggplot2)
+ <pre><code class="r">see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
+library(ggplot2)
 ggplot(see1, aes(time, ratio))+geom_smooth(method=&quot;loess&quot;) +
   scale_size_area() +geom_point(aes(size = 20), alpha = 1/2) 
 </code></pre>
 
-<pre><code>## Error in ggplot(see1, aes(time, ratio)): object &#39;see1&#39; not found
-</code></pre>
+<p><img src="assets/fig/plotChunk-1.png" alt="plot of chunk plotChunk"> </p>
 
 </div>
   </article>

@@ -1055,10 +1055,6 @@ t2 = filter(t1,is.na(mortage_total_bal)==FALSE)
 ## 接下來我們應該做(1/3) - 畫圖
 
 
-```r
-see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
-```
-
 *** =left
 
 1. `畫圖`
@@ -1067,14 +1063,13 @@ see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
 
 
 ```r
+see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
 library(ggplot2)
 ggplot(see1, aes(time, ratio))+geom_smooth(method="loess") +
   scale_size_area() +geom_point(aes(size = 20), alpha = 1/2) 
 ```
 
-```
-## Error in ggplot(see1, aes(time, ratio)): object 'see1' not found
-```
+![plot of chunk plotChunk](assets/fig/plotChunk-1.png) 
 
 
 
