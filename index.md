@@ -40,7 +40,7 @@ mode        : selfcontained # {standalone, draft}
 <q>是否覺得很奇怪，跟好像似曾相識?</q>
 
 
---- 
+--- &hcenter
 
 <img src = './resources/figures/R_ETL_NEWS_1.png' height="400px"></img>
 
@@ -48,7 +48,7 @@ mode        : selfcontained # {standalone, draft}
 --- &twocol
 
 ## 資料在哪裡
-從上面`新聞`所述，所以我們想要:
+從新聞所述，所以我們想要:
 
 *** =left
 從新聞所述，所以我們想要:
