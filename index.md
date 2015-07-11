@@ -12,9 +12,18 @@ widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 --- .segue bg:blue
 ## 先說結論
-
 --- 
 <img src = './resources/figures/cheatsheet.png' height="400px"></img>
+
+---
+
+## 講者自介
+
+- 林鉦育 (aha)
+- 台大數學系, 物理所
+- 中研院資訊所研究助理
+- 玉山金控助理襄理
+- 2014 DSC R ETL講師
 
 
 --- &twocol_dynamic w1:30% w2:66%
