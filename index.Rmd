@@ -5,13 +5,16 @@ author      : Cheng Yu Lin (aha)
 job         : 
 license     : by-sa
 framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight  # {highlight.js, prettify, highlight}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 ext_widgets : {rCharts: libraries/nvd3}
 widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
----
-先說結論
+--- .segue bg:blue
+## 先說結論
+
+--- 
+<img src = './resources/figures/cheatsheet.png' height="400px"></img>
 
 
 --- &twocol_dynamic w1:30% w2:66%
