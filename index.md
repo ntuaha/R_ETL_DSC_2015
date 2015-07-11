@@ -676,33 +676,13 @@ GDP_part4 = select(GDP_part3,year,season,GDP)
 <q>擁有了`GDP`和`房貸餘額`，那接下來呢?</a>
 <img src = './resources/figures/R_ETL_PART2.png' ></img>
 
---- &vcenter
-
-<q>`非結構化`的新聞與股市資料!</q>
-
-
-
-
 --- .dark .segue
 
 ## 學習，實作，觀察 STEP3
 
 ---
 
-##  ETL `第三步`
-
-<img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img>
-
-
-
-
---- .dark .segue
-
-## 學習，實作，觀察 STEP4
-
----
-
-## ETL `最後一步`
+## ETL `最後一步` - 整合！
 
 <img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img>
 
