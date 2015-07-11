@@ -40,7 +40,7 @@ mode        : selfcontained # {standalone, draft}
 <q>是否覺得很奇怪，跟好像似曾相識?</q>
 
 
---- &hcenter
+--- &vcenter
 
 <img src = './resources/figures/R_ETL_NEWS_1.png' height="400px"></img>
 
