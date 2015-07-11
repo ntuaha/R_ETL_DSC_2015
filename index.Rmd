@@ -4,8 +4,8 @@ subtitle    :
 author      : Cheng Yu Lin (aha)
 job         : 
 license     : by-sa
-framework   : shower       # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
+framework   : dzslides       # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 ext_widgets : {rCharts: libraries/nvd3}
 widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
