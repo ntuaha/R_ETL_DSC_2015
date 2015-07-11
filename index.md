@@ -1,7 +1,7 @@
 ---
-title       : ETL on R
+title       : ETL on R 2015
 subtitle    : 
-author      : Cheng Yu Lin (aha) and Jia Wei Chen (jiawei)
+author      : Cheng Yu Lin (aha)
 job         : 
 license     : by-sa
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -10,6 +10,10 @@ hitheme     : tomorrow      #
 ext_widgets : {rCharts: libraries/nvd3}
 widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
+---
+先說結論
+
+
 --- &twocol_dynamic w1:30% w2:66%
 ## 故事的起源
 *** =left
@@ -275,7 +279,6 @@ str(Cl_info)
 - `etl_dt` `data_dt` 是`文字`但應該是`時間`
 - `bank_code` 也是`文字`但應該是`factor`
 
-
 ---
 
 ## Transformation - 資料處理
@@ -318,9 +321,9 @@ str(Cl_info_part)
 --- &twocol_dynamic w1:68% w2:28%
 
 
-## 練習-挑選`欄位`(1/2)
+## 練習-挑選欄位(1/2)
 
-### dplyr `select` 函式，用來__挑選__`欄位`
+### dplyr `select` 函式，用來__挑選__欄位
 
 *** =left
 
@@ -344,9 +347,9 @@ select data_dt,bank_nm,mortgage_bal from Cl_info;
 
 --- &twocol_dynamic w1:68% w2:28%
 
-## 練習-挑選`欄位`(2/2)
+## 練習-挑選欄位(2/2)
 
-### dplyr `select` 函式，用來__挑選__`欄位`
+### dplyr `select` 函式，用來__挑選__欄位
 
 *** =left
 
