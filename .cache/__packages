@@ -1,3 +1,6 @@
 base
 slidify
 ggplot2
+dplyr
+devtools
+DSC2014Tutorial

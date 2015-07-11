@@ -1370,10 +1370,17 @@ ljyx = left_join(y,x,by=&quot;c1&quot;) #以Y為主
 <div style='float:left;width:48%;' class='centered'>
   <h3><code>inner_join</code> 取出共有的鍵值</h3>
 
-<pre><code class="r">inner_join(x,y,by=&quot;c1&quot;)
+<pre><code class="r">library(dplyr)
+inner_join(x,y,by=&quot;c1&quot;)
 </code></pre>
 
-<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;inner_join&quot;
+<pre><code>##   c1 c2.x c2.y
+## 1  1    A    A
+## 2  1    B    A
+## 3  2    C    B
+## 4  2    C    C
+## 5  3    D    D
+## 6  4    E    E
 </code></pre>
 
 </div>

@@ -981,11 +981,18 @@ ljyx = left_join(y,x,by="c1") #以Y為主
 ### `inner_join` 取出共有的鍵值
 
 ```r
+library(dplyr)
 inner_join(x,y,by="c1")
 ```
 
 ```
-## Error in eval(expr, envir, enclos): could not find function "inner_join"
+##   c1 c2.x c2.y
+## 1  1    A    A
+## 2  1    B    A
+## 3  2    C    B
+## 4  2    C    C
+## 5  3    D    D
+## 6  4    E    E
 ```
 
 *** =right
