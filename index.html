@@ -1,56 +1,207 @@
 <!DOCTYPE html>
+<html>
+<head>
+  <title>ETL on R 2015</title>
+  <meta charset="utf-8">
+  <meta name="description" content="ETL on R 2015">
+  <meta name="author" content="Cheng Yu Lin (aha)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
 
-<meta charset="utf-8">
-<title>The Title Of Your Presentation</title>
-
-<!-- Your Slides -->
-<!-- One section is one slide -->
-
-<section class="" id="slide-1">
   
-  <p>先說結論</p>
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
 
-</section>
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>ETL on R 2015</h1>
+    <h2></h2>
+    <p>Cheng Yu Lin (aha)<br/></p>
+  </hgroup>
+  <article></article>  
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png'>
+    </a>
+  </footer>
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <p>先說結論</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>故事的起源</h2>
 
 <h2>故事的起源</h2>
 
 <h2>故事的起源</h2>
 
-
+<slide class="" id="slide-5">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q>在論述台灣房市之前，身為一個<code>資料科學家</code>，第一步是了解問題</q></p>
 
-
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-6">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q>本次，我們的問題是<code>房價真的太高了嗎?</code></q></p>
 
-<section class="" id="slide-7">
-  
-  <p>還記得這個<code>新聞</code>吧？ 就從這裡開始
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+    <p>還記得這個<code>新聞</code>吧？ 就從這裡開始
 <img src = './resources/figures/R_ETL_NEWS_1.png' height="400px"></img></p>
 
-</section>
-<section class="" id="slide-8">
-  <h2>資料在哪裡</h2>
-  <p>從上面<code>新聞</code>所述，所以我們想要:</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<h2>資料在哪裡</h2>
-<p>從上面<code>新聞</code>所述，所以我們想要:</p>
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>資料在哪裡</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>從上面<code>新聞</code>所述，所以我們想要:</p>
 
-<h2>資料在哪裡</h2>
-<p>從上面<code>新聞</code>所述，所以我們想要:</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>資料在哪裡</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>從上面<code>新聞</code>所述，所以我們想要:</p>
 
+<div style='float:left;width:48%;' class='centered'>
+  <h3><code>你想知道什麼資料?</code></h3>
+
+<ol>
+<li>GDP</li>
+<li>房貸餘額</li>
+<li>股價</li>
+<li>新聞</li>
+<li>地價資訊</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>資料在哪裡</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>從上面<code>新聞</code>所述，所以我們想要:</p>
+
+<div style='float:left;width:48%;' class='centered'>
+  <h3><code>你想知道什麼資料?</code></h3>
+
+<ol>
+<li>GDP</li>
+<li>房貸餘額</li>
+<li>股價</li>
+<li>新聞</li>
+<li>地價資訊</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <h3><code>可能的來源?</code></h3>
+
+<ol>
+<li>政府公開資料
+
+<ul>
+<li>主計處</li>
+<li>央行</li>
+</ul></li>
+<li>新聞
+
+<ul>
+<li>紙本報紙</li>
+<li>電視新聞</li>
+<li>電子新聞</li>
+</ul></li>
+<li>股市
+
+<ul>
+<li>Yahoo Stock API</li>
+</ul></li>
+</ol>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q>即便知道資料在哪，可是資料還是如同<code>一盤散沙</code></q></p>
 
-<section class="" id="slide-12">
-  <h2>看看Raw Data</h2>
-  <p><img src = './resources/figures/R_ETL_RAWDATA.png' height="350px"></img></p>
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>看看Raw Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_RAWDATA.png' height="350px"></img></p>
 
-</section>
-<section class="" id="slide-13">
-  <h2>我們ETL會用到的有</h2>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>我們ETL會用到的有</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
 <li><code>dplyr</code> 可用<code>類似SQL方法</code>操作data frome</li>
 <li><code>xts</code> 處理<code>時間</code>格式好用的套件</li>
 <li><code>gdata</code> 可以處理<code>Excel 2007</code>以上的文件</li>
@@ -58,15 +209,24 @@
 <li><code>stringr</code> <code>字串</code>相關處理</li>
 </ul>
 
-</section>
-<section class="quote" id="slide-14">
-  
-  <p><q>來上課的，有<code>福</code>了</q></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-15">
-  <h2>DSC的One Piece</h2>
-  <ul>
+<slide class="quote" id="slide-14" style="background:;">
+  <article data-timings="">
+    <p><q>來上課的，有<code>福</code>了</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>DSC的One Piece</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
 <li><code>DSC2014Tutorial</code> R社群為了這次Tutorial製作的套件，所有的教材都在這了</li>
 </ul>
 
@@ -87,25 +247,49 @@ library(DSC2014Tutorial)
 <pre><code>slides(&quot;ETL&quot;)
 </code></pre>
 
-</section>
-<section class="" id="slide-16">
-  <h2>解決資料散亂的方法 - <code>ETL</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL.png' height="350px"></img></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-17">
-  <h2>ETL 的主要內容</h2>
-  <p><img src = './resources/figures/R_ETL_ETL_3.png' height="350px"></img></p>
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>解決資料散亂的方法 - <code>ETL</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL.png' height="350px"></img></p>
 
-</section>
-<section class="" id="slide-18">
-  <h2>今日解決的問題流程 - <code>ETL</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-19">
-  <h2>今日課程的目標</h2>
-  <h3>學會<strong>extraction</strong>, <strong>cleaning</strong>, <strong>transformation</strong></h3>
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>ETL 的主要內容</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_3.png' height="350px"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>今日解決的問題流程 - <code>ETL</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>今日課程的目標</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>學會<strong>extraction</strong>, <strong>cleaning</strong>, <strong>transformation</strong></h3>
 
 <ul>
 <li>用R整理<code>結構</code>化資料 <strong>STEP1 房貸餘額1</strong> , <strong>STEP2 GDP</strong></li>
@@ -120,27 +304,51 @@ library(DSC2014Tutorial)
 
 <h3>邁向 <strong>其他有意思的主題</strong></h3>
 
-</section>
-<section class="dark segue" id="slide-20">
-  <h2>學習，實作，觀察 STEP1</h2>
-  
-</section>
-<section class="" id="slide-21">
-  <h2>ETL <code>第一步</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-22">
-  <h2>開始收集資料(房貸餘額)</h2>
-  <p>請連線到 
+<slide class="dark segue" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>學習，實作，觀察 STEP1</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>ETL <code>第一步</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>開始收集資料(房貸餘額)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>請連線到 
 <code>https://survey.banking.gov.tw/statis/stmain.jsp?sys=100&amp;funid=r100</code></p>
 
 <iframe src = 'https://survey.banking.gov.tw/statis/stmain.jsp?sys=100&funid=r100' height='400px'></iframe>
 
-</section>
-<section class="" id="slide-23">
-  <h2>開始收集資料</h2>
-  <h3>房貸餘額,直接下載現成的csv檔案</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>開始收集資料</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>房貸餘額,直接下載現成的csv檔案</h3>
 
 <ul>
 <li>直接到<a href="https://raw.githubusercontent.com/ntuaha/TWFS/master/db/cl_info_other.csv">https://raw.githubusercontent.com/ntuaha/TWFS/master/db/cl_info_other.csv</a>下載檔案</li>
@@ -154,10 +362,16 @@ library(DSC2014Tutorial)
 ETL_file(&quot;cl_info_other.csv&quot;)
 </code></pre>
 
-</section>
-<section class="" id="slide-24">
-  <h2>讀入資料 - read.table</h2>
-  <p>至少要記得的 <code>read.table</code></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>讀入資料 - read.table</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>至少要記得的 <code>read.table</code></p>
 
 <pre><code>Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
 </code></pre>
@@ -170,34 +384,55 @@ ETL_file(&quot;cl_info_other.csv&quot;)
 <li>header 預設是<code>False</code>，表示第一行是不是表格標頭，作為輸出的dataframe欄位名的colnames</li>
 </ul>
 
-</section>
-<section class="" id="slide-25">
-  <h2>看看讀入結果</h2>
-  <pre><code>View(Cl_info)
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>看看讀入結果</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>View(Cl_info)
 str(Cl_info)
 </code></pre>
 
 <p><img src = './resources/figures/R_ETL_EXP1.png' height="350px"></img></p>
 
-</section>
-<section class="quote" id="slide-26">
-  
-  <p><q>直接讀入是否覺得怪怪的?</q></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-27">
-  <h2>再看一次</h2>
-  <p><img src = './resources/figures/R_ETL_EXP1.png' height="350px"></img></p>
+<slide class="quote" id="slide-26" style="background:;">
+  <article data-timings="">
+    <p><q>直接讀入是否覺得怪怪的?</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>再看一次</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_EXP1.png' height="350px"></img></p>
 
 <ul>
 <li><code>etl_dt</code> <code>data_dt</code> 是<code>文字</code>但應該是<code>時間</code></li>
 <li><code>bank_code</code> 也是<code>文字</code>但應該是<code>factor</code></li>
 </ul>
 
-</section>
-<section class="" id="slide-28">
-  <h2>Transformation - 資料處理</h2>
-  <h3>將資料讀入</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Transformation - 資料處理</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>將資料讀入</h3>
 
 <pre><code>library(DSC2014Tutorial)
 library(dplyr)
@@ -214,26 +449,38 @@ str(Cl_info_part)
 <li>到這裡已經完成第一次的資料<code>Extraction</code>與<code>Transformation</code>了！</li>
 </ul>
 
-</section>
-<section class="quote" id="slide-29">
-  
-  <p><q>看見資料了!但是剛剛處理過程中的<code>mutate</code>是什麼?</q></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="quote" id="slide-30">
-  
-  <p><q>看見資料了!但是剛剛處理過程中的<code>mutate</code>是什麼?</q></p>
+<slide class="quote" id="slide-29" style="background:;">
+  <article data-timings="">
+    <p><q>看見資料了!但是剛剛處理過程中的<code>mutate</code>是什麼?</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="quote" id="slide-30" style="background:;">
+  <article data-timings="">
+    <p><q>看見資料了!但是剛剛處理過程中的<code>mutate</code>是什麼?</q></p>
 
 <p><q> 在<code>R</code>中用來做<strong>資料清理</strong>與<strong>資料處理</strong>好用的套件<code>dplyr</code>其中之一的函式<q></p>
 
-</section>
-<section class="quote" id="slide-31">
-  
-  <p><q> 接下來我們將介紹三個基本函式 </q></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="quote" id="slide-31" style="background:;">
+  <article data-timings="">
+    <p><q> 接下來我們將介紹三個基本函式 </q></p>
 
 <p><img src = './resources/figures/R_ETL_Fn1.png' height="350px"></img></p>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>練習-挑選欄位(1/2)</h2>
 <h3>dplyr <code>select</code> 函式，用來<strong>挑選</strong>欄位</h3>
 
@@ -255,9 +502,12 @@ str(Cl_info_part)
 <h2>練習-<code>排序</code>資料(2/2)</h2>
 <h3>dplyr <code>arrange</code> 用來重新排序</h3>
 
-<section class="" id="slide-39">
-  <h2>練習時間</h2>
-  <ol>
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>練習時間</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>請幫忙從Cl_info_part找出<code>data_dt</code>,<code>bank_nm</code>,<code>mortgage_bal</code></li>
 <li>請幫忙從Cl_info_part挑選出<code>mortgage＿bal</code>大於1千萬的銀行資料</li>
 <li>請幫忙排序Cl_info_part出<code>mortgage＿bal</code>由小到大，但資料時間<code>data_dt</code>從大到小</li>
@@ -267,31 +517,58 @@ str(Cl_info_part)
 <pre><code>Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 </code></pre>
 
-</section>
-<section class="dark segue" id="slide-40">
-  <h2>學習，實作，觀察 STEP2</h2>
-  
-</section>
-<section class="quote" id="slide-41">
-  
-  <p><q>讓我們來練習抓下一個資料<code>GDP</code></q></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-42">
-  <h2>ETL <code>第二步</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+<slide class="dark segue" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>學習，實作，觀察 STEP2</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-43">
-  <h2>開始收集資料(GDP)</h2>
-  <p>請連線到 <code>http://ebas1.ebas.gov.tw/pxweb/Dialog/NI.asp</code></p>
+<slide class="quote" id="slide-41" style="background:;">
+  <article data-timings="">
+    <p><q>讓我們來練習抓下一個資料<code>GDP</code></q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>ETL <code>第二步</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  <hgroup>
+    <h2>開始收集資料(GDP)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>請連線到 <code>http://ebas1.ebas.gov.tw/pxweb/Dialog/NI.asp</code></p>
 
 <iframe src = 'http://ebas1.ebas.gov.tw/pxweb/Dialog/NI.asp' height='400px'></iframe>
 
-</section>
-<section class="" id="slide-44">
-  <h2>開始收集資料(GDP)</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  <hgroup>
+    <h2>開始收集資料(GDP)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>GDP從直接下載<code>國民生產毛額之處分</code></li>
 <li>季(1980之後）</li>
 <li>選<strong>全部的日期</strong></li>
@@ -305,31 +582,50 @@ str(Cl_info_part)
 
 <p>或是<code>ETL_file(&quot;GDP.txt&quot;)</code></p>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
+<slide class="" id="slide-45">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q>練習讀入與創建一個<code>GDP</code>的 data frame</q></p>
 
-<section class="quote" id="slide-46">
-  
-  <p><q>答案</q></p>
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="quote" id="slide-46" style="background:;">
+  <article data-timings="">
+    <p><q>答案</q></p>
 
 <pre><code class="r">GDP = read.table(file=ETL_file(&quot;GDP.txt&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=F)
 </code></pre>
 
-</section>
-<section class="quote" id="slide-47">
-  
-  <p><q>輸入<code>View(GDP)</code>觀察<code>GDP</code>會發現怎麼前後有很多列的資料是不要的</q>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="quote" id="slide-47" style="background:;">
+  <article data-timings="">
+    <p><q>輸入<code>View(GDP)</code>觀察<code>GDP</code>會發現怎麼前後有很多列的資料是不要的</q>
 <img src = './resources/figures/R_ETL_2.png' ></img></p>
 
 <h3>好亂，我想<code>整理</code>好這個data frome</h3>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>資料清理</h2>
 
-<section class="" id="slide-49">
-  <h2>去除前後不相干的資料列</h2>
-  <pre><code>GDP_part = GDP[5:136,]
+<slide class="" id="slide-49" style="background:;">
+  <hgroup>
+    <h2>去除前後不相干的資料列</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>GDP_part = GDP[5:136,]
 </code></pre>
 
 <h3>別忘了改上欄位名稱</h3>
@@ -340,10 +636,16 @@ str(Cl_info_part)
 
 <p><img src = './resources/figures/R_ETL_GDP_1.png' ></img></p>
 
-</section>
-<section class="" id="slide-50">
-  <h2>去除rownames</h2>
-  <pre><code>rownames(GDP_part) = NULL
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-50" style="background:;">
+  <hgroup>
+    <h2>去除rownames</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>rownames(GDP_part) = NULL
 View(GDP_part)
 </code></pre>
 
@@ -355,10 +657,16 @@ rownames(iris_part) &lt;- c(&#39;a&#39;,&#39;c&#39;,&#39;d&#39;)
 View(iris_part)
 </code></pre>
 
-</section>
-<section class="" id="slide-51">
-  <h2>轉移文字格式</h2>
-  <pre><code># 去除中間不合理的,在數字欄位上與補上百萬
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-51" style="background:;">
+  <hgroup>
+    <h2>轉移文字格式</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code># 去除中間不合理的,在數字欄位上與補上百萬
 GDP_part2= mutate(GDP_part,GDP = as.numeric(gsub(&quot;,&quot;, &quot;&quot;,GDP))*1000000)
 
 </code></pre>
@@ -370,10 +678,16 @@ GDP_part2= mutate(GDP_part,GDP = as.numeric(gsub(&quot;,&quot;, &quot;&quot;,GDP
 
 <p><img src = './resources/figures/R_ETL_GDP2.png' ></img></p>
 
-</section>
-<section class="" id="slide-52">
-  <h2>抽離年份與季</h2>
-  <pre><code>GDP_part3 = mutate(GDP_part2,year=as.numeric(substr(time,0,4)),
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-52" style="background:;">
+  <hgroup>
+    <h2>抽離年份與季</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>GDP_part3 = mutate(GDP_part2,year=as.numeric(substr(time,0,4)),
                             season=as.numeric(substr(time,6,6)))
 GDP_part4 = select(GDP_part3,year,season,GDP)
 </code></pre>
@@ -385,46 +699,92 @@ GDP_part4 = select(GDP_part3,year,season,GDP)
 
 <p><img src = './resources/figures/R_ETL_GDP3.png' ></img></p>
 
-</section>
-<section class="" id="slide-53">
-  <h2>練習時間</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-53" style="background:;">
+  <hgroup>
+    <h2>練習時間</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>去除頭尾不合理的資料列</li>
 <li>去除GDP的 <code>,</code> , 然後將它轉成數字</li>
 <li>將<code>year</code>,<code>season</code>抽離出來並轉成數字，同時最後資料只保留<code>GDP</code>,<code>year</code>,<code>season</code></li>
 </ol>
 
-</section>
-<section class="quote" id="slide-54">
-  
-  <p><q>擁有了<code>GDP</code>和<code>房貸餘額</code>，那接下來呢?</a>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="quote" id="slide-54" style="background:;">
+  <article data-timings="">
+    <p><q>擁有了<code>GDP</code>和<code>房貸餘額</code>，那接下來呢?</a>
 <img src = './resources/figures/R_ETL_PART2.png' ></img></p>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
+<slide class="" id="slide-55">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q><code>非結構化</code>的新聞與股市資料!</q></p>
 
-<section class="dark segue" id="slide-56">
-  <h2>學習，實作，觀察 STEP3</h2>
-  
-</section>
-<section class="" id="slide-57">
-  <h2>ETL <code>第三步</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="dark segue" id="slide-56" style="background:;">
+  <hgroup>
+    <h2>學習，實作，觀察 STEP3</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="dark segue" id="slide-58">
-  <h2>學習，實作，觀察 STEP4</h2>
-  
-</section>
-<section class="" id="slide-59">
-  <h2>ETL <code>最後一步</code></h2>
-  <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+<slide class="" id="slide-57" style="background:;">
+  <hgroup>
+    <h2>ETL <code>第三步</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
 
-</section>
-<section class="" id="slide-60">
-  <h2>資料整併</h2>
-  <h3>要處理的標的物有</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue" id="slide-58" style="background:;">
+  <hgroup>
+    <h2>學習，實作，觀察 STEP4</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  <hgroup>
+    <h2>ETL <code>最後一步</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src = './resources/figures/R_ETL_ETL_2.png' height="350px"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-60" style="background:;">
+  <hgroup>
+    <h2>資料整併</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>要處理的標的物有</h3>
 
 <ol>
 <li>將<strong>房貸餘額</strong>匯總到<code>每個月</code>的資料</li>
@@ -432,26 +792,51 @@ GDP_part4 = select(GDP_part3,year,season,GDP)
 <li>透過<code>年份</code>將<strong>房貸餘額</strong>與<strong>GDP</strong>的表<code>結合</code>起來</li>
 </ol>
 
-</section>
-<section class="" id="slide-61">
-  <h2>資料整併流程</h2>
-  <p><img src="./resources/figures/R_ETL_PART4.png"></img></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
-<section class="" id="slide-62">
-  <h2>資料彙總</h2>
-  <p>將介紹 <code>group_by</code>, <code>summarize</code>
+<slide class="" id="slide-61" style="background:;">
+  <hgroup>
+    <h2>資料整併流程</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./resources/figures/R_ETL_PART4.png"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-62" style="background:;">
+  <hgroup>
+    <h2>資料彙總</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>將介紹 <code>group_by</code>, <code>summarize</code>
 <img src="./resources/figures/R_ETL_Fn2.png"></img></p>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>練習-資料<code>彙總</code>(1/2)</h2>
 
-
+<slide class="" id="slide-64">
+<hgroup>
+  
+</hgroup>
+<article class = 'flexbox vcenter'>
 <p><q>group by 可加先下也可不下，不下的情況是直對接<code>全部</code>資料做集匯總運算 </q></p>
 
-<section class="" id="slide-65">
-  <h2>練習-資料<code>彙總</code>(2/2)</h2>
-  <ol>
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-65" style="background:;">
+  <hgroup>
+    <h2>練習-資料<code>彙總</code>(2/2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li> 將房貸餘額每個月的值算出來</li>
 <li> 將GDP每年的值算出來</li>
 </ol>
@@ -461,10 +846,16 @@ GDP_part4 = select(GDP_part3,year,season,GDP)
 
 <p><img src="./resources/figures/R_ETL_SUMMARIZE.png"></img></p>
 
-</section>
-<section class="" id="slide-66">
-  <h2>彙總函數 summarise</h2>
-  <p>可以使用的函數如下所列</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-66" style="background:;">
+  <hgroup>
+    <h2>彙總函數 summarise</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>可以使用的函數如下所列</p>
 
 <ul>
 <li>mean  平均值</li>
@@ -475,61 +866,109 @@ GDP_part4 = select(GDP_part3,year,season,GDP)
 <li>median 中位數</li>
 </ul>
 
-</section>
-<section class="" id="slide-67">
-  <h2>mean</h2>
-  <h3>請計算每月全體銀行餘額平均值(eg1)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-67" style="background:;">
+  <hgroup>
+    <h2>mean</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每月全體銀行餘額平均值(eg1)</h3>
 
 <p><img src="./resources/figures/R_ETL_MEAN.png"></img></p>
 
-</section>
-<section class="" id="slide-68">
-  <h2>n</h2>
-  <h3>請計算每個月有多少家銀行有房貸餘額(eg2)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-68" style="background:;">
+  <hgroup>
+    <h2>n</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每個月有多少家銀行有房貸餘額(eg2)</h3>
 
 <p><img src="./resources/figures/R_ETL_N.png"></img></p>
 
-</section>
-<section class="" id="slide-69">
-  <h2>n_distinct</h2>
-  <h3>請計算每年有多少家銀行有房貸餘額(eg3)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-69" style="background:;">
+  <hgroup>
+    <h2>n_distinct</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每年有多少家銀行有房貸餘額(eg3)</h3>
 
 <p><img src="./resources/figures/R_ETL_NDISTINCT.png"></img></p>
 
-</section>
-<section class="" id="slide-70">
-  <h2>max</h2>
-  <h3>請計算每月單一銀行擁有的最多房貸餘額(eg4)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-70" style="background:;">
+  <hgroup>
+    <h2>max</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每月單一銀行擁有的最多房貸餘額(eg4)</h3>
 
 <p><img src="./resources/figures/R_ETL_MAX.png"></img></p>
 
-</section>
-<section class="" id="slide-71">
-  <h2>first, last</h2>
-  <h3>請計算每月房貸餘額排名第ㄧ的銀行(eg5)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-71" style="background:;">
+  <hgroup>
+    <h2>first, last</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每月房貸餘額排名第ㄧ的銀行(eg5)</h3>
 
 <p><img src="./resources/figures/R_ETL_FIRST.png"></img></p>
 
-</section>
-<section class="" id="slide-72">
-  <h2>複雜一點的函數</h2>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-72" style="background:;">
+  <hgroup>
+    <h2>複雜一點的函數</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
 <li>first 該群體第一個，可配合<code>order_by</code> 使用;  first(x,order_by=y)</li>
 <li>last  該群體最後一個，可配合<code>order_by</code> 使用;  last(x,order_by=y)</li>
 <li>nth   該群體的第n個，可配合<code>order_by</code> 使用;  nth(x,10))</li>
 </ul>
 
-</section>
-<section class="" id="slide-73">
-  <h2>nth</h2>
-  <h3>請計算每月房貸餘額排名第2的銀行 (eg6)</h3>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-73" style="background:;">
+  <hgroup>
+    <h2>nth</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請計算每月房貸餘額排名第2的銀行 (eg6)</h3>
 
 <p><img src="./resources/figures/R_ETL_NTH.png"></img></p>
 
-</section>
-<section class="" id="slide-74">
-  <h2>練習題目- 解答(1/2)</h2>
-  <pre><code>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-74" style="background:;">
+  <hgroup>
+    <h2>練習題目- 解答(1/2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>
 
 eg1 =  summarise(group_by(Cl_info_part2,time) , 
          mortage_mean_bal = mean(mortgage_bal, na.rm = TRUE))
@@ -542,10 +981,16 @@ eg3_2 = mutate(eg3_1,year = format(time,&quot;%Y&quot;))
 eg3_3 = summarise(group_by(eg3_2,year),count = n_distinct(bank_nm))
 </code></pre>
 
-</section>
-<section class="" id="slide-75">
-  <h2>練習題目- 解答(2/2)</h2>
-  <pre><code>eg4 = summarise(group_by(Cl_info_part2,time),
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-75" style="background:;">
+  <hgroup>
+    <h2>練習題目- 解答(2/2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>eg4 = summarise(group_by(Cl_info_part2,time),
        val = max(mortgage_bal))
 
 
@@ -559,14 +1004,26 @@ eg6_2 = summarise(group_by(eg6_1,time),
           val = nth(bank_nm,2))
 </code></pre>
 
-</section>
-<section class="segue" id="slide-76">
-  <h2>接下來比較難，真的!!!!</h2>
-  
-</section>
-<section class="" id="slide-77">
-  <h2>結合表格</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-76" style="background:red;">
+  <hgroup>
+    <h2>接下來比較難，真的!!!!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-77" style="background:;">
+  <hgroup>
+    <h2>結合表格</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>cbind 用來做 <code>1-1</code> <strong>水平</strong>結合</li>
 <li>rbind 用來做 <strong>垂直</strong>結合</li>
 <li>left_join 用來做<code>多對多</code> <strong>水平</strong>結合</li>
@@ -577,19 +1034,31 @@ eg6_2 = summarise(group_by(eg6_1,time),
 <p>看得懂在幹嘛嗎?</p>
 </blockquote>
 
-</section>
-<section class="" id="slide-78">
-  <h2>圖解<code>結合表格</code></h2>
-  <p><img src="./resources/figures/R_ETL_Fn3.png" width="100%"></img></p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-</section>
+<slide class="" id="slide-78" style="background:;">
+  <hgroup>
+    <h2>圖解<code>結合表格</code></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./resources/figures/R_ETL_Fn3.png" width="100%"></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>join講解前資料準備</h2>
 
 <h2>join講解前資料準備</h2>
 
-<section class="" id="slide-81">
-  <h2>dplyr 介紹 - left_join</h2>
-  <h3>參數<code>by</code> 指出以何欄位作為對照鍵值</h3>
+<slide class="" id="slide-81" style="background:;">
+  <hgroup>
+    <h2>dplyr 介紹 - left_join</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>參數<code>by</code> 指出以何欄位作為對照鍵值</h3>
 
 <p>透過先前創建的<code>x</code>與<code>y</code>，以及交集的鍵值<code>c1</code></p>
 
@@ -599,19 +1068,53 @@ ljyx = left_join(y,x,by=&quot;c1&quot;) #以Y為主
 
 <p><img src="./resources/figures/R_ETL_LJXY.png" style="height:300px"></img></p>
 
-</section>
-<h2>dplyr 介紹 - inner_join</h2>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<section class="" id="slide-83">
-  <h2>實際問題 - 練習題</h2>
-  <h3>請問，這兩張表該怎麼結合比較好?</h3>
+<slide class="" id="slide-82" style="background:;">
+  <hgroup>
+    <h2>dplyr 介紹 - inner_join</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <h3><code>inner_join</code> 取出共有的鍵值</h3>
+
+<pre><code class="r">inner_join(x,y,by=&quot;c1&quot;)
+</code></pre>
+
+<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;inner_join&quot;
+</code></pre>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./resources/figures/R_ETL_INNERJOIN.png" style="height:400px" ></img></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-83" style="background:;">
+  <hgroup>
+    <h2>實際問題 - 練習題</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>請問，這兩張表該怎麼結合比較好?</h3>
 
 <p><img src="./resources/figures/R_ETL_TWOTABLES.png" style="height:400px" ></img></p>
 
-</section>
-<section class="" id="slide-84">
-  <h3>請問，這兩張表該怎麼結合比較好?用誰當第一參數?</h3>
-  
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-84" style="background:;">
+  <hgroup>
+    <h3>請問，這兩張表該怎麼結合比較好?用誰當第一參數?</h3>
+  </hgroup>
+  <article data-timings="">
+    
 <div class='row-fluid'>
   <div class='span6'>
     <p><img src="./resources/figures/R_ETL_TWOTABLES.png" style="height:400px" ></img></p>
@@ -639,10 +1142,16 @@ ljyx = left_join(y,x,by=&quot;c1&quot;) #以Y為主
     </div>
   </div>
 </div>
-</section>
-<section class="" id="slide-85">
-  <h2>練習</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-85" style="background:;">
+  <hgroup>
+    <h2>練習</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>將GDP與房貸餘額，透過1月的資訊整理起來</li>
 </ol>
 
@@ -656,11 +1165,20 @@ t2 = filter(t1,is.na(mortage_total_bal)==FALSE)
 
 <p><img src="./resources/figures/R_ETL_t2.png" style="height:200px" ></img></p>
 
-</section>
-<section class="segue" id="slide-86">
-  <h2>最後一里路</h2>
-  
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-86" style="background:indigo;">
+  <hgroup>
+    <h2>最後一里路</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>接下來我們應該做(1/3) - 畫圖</h2>
 <pre><code>see1 = filter(mutate(t2,ratio =mortage_total_bal/GDP),is.na(ratio)==FALSE)
 </code></pre>
@@ -671,19 +1189,34 @@ t2 = filter(t1,is.na(mortage_total_bal)==FALSE)
 <h2>接下來我們應該做(3/3) - 報告</h2>
 <p>將所有的解釋與圖表<code>包裝成一個故事</code>，展現出來</p>
 
-<section class="segue" id="slide-90">
-  <h2>Review</h2>
-  
-</section>
+<slide class="segue" id="slide-90" style="background:orange;">
+  <hgroup>
+    <h2>Review</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
 <h2>我們做了什麼?</h2>
 
-<section class="segue" id="slide-92">
-  <h2>額外延伸主題</h2>
-  
-</section>
-<section class="" id="slide-93">
-  <h2>自動化</h2>
-  <ul>
+<slide class="segue" id="slide-92" style="background:green;">
+  <hgroup>
+    <h2>額外延伸主題</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-93" style="background:;">
+  <hgroup>
+    <h2>自動化</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
 <li>建立R Script</li>
 </ul>
 
@@ -705,10 +1238,16 @@ write.csv(iris_part,file=&quot;[想要的目錄]/GG.csv&quot;)
 <li>可透過<code>crontab</code>定期執行</li>
 </ul>
 
-</section>
-<section class="" id="slide-94">
-  <h2>從網路讀檔案</h2>
-  <ul>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-94" style="background:;">
+  <hgroup>
+    <h2>從網路讀檔案</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
 <li>安裝套件</li>
 </ul>
 
@@ -735,14 +1274,26 @@ file=&quot;https://raw.githubusercontent.com/ntuaha/TWFS/master/db/cl_info_other
 fileEncoding=&quot;UTF-8&quot;)
 </code></pre>
 
-</section>
-<section class="segue" id="slide-95">
-  <h2>Speical</h2>
-  
-</section>
-<section class="" id="slide-96">
-  <h2>Topics</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-95" style="background:blue;">
+  <hgroup>
+    <h2>Speical</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-96" style="background:;">
+  <hgroup>
+    <h2>Topics</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li>自動化排程</li>
 <li>與資料庫溝通</li>
 <li>其他的資料源
@@ -754,626 +1305,643 @@ fileEncoding=&quot;UTF-8&quot;)
 <li>培養對資料的品味</li>
 </ol>
 
-</section>
-<section class="" id="slide-97">
-  <h2>Reference</h2>
-  <ol>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-97" style="background:;">
+  <hgroup>
+    <h2>Reference</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
 <li><a href="http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html">http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html</a></li>
 <li><a href="http://cran.r-project.org/web/packages/dplyr/dplyr.pdf">http://cran.r-project.org/web/packages/dplyr/dplyr.pdf</a></li>
 </ol>
 
-</section>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<!-- Your Style -->
-<!-- Define the style of your presentation -->
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='故事的起源'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='故事的起源'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='故事的起源'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='資料在哪裡'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='資料在哪裡'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='資料在哪裡'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title=''>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='看看Raw Data'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='我們ETL會用到的有'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title=''>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='DSC的One Piece'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='解決資料散亂的方法 - <code>ETL</code>'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='ETL 的主要內容'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='今日解決的問題流程 - <code>ETL</code>'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='今日課程的目標'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='學習，實作，觀察 STEP1'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='ETL <code>第一步</code>'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='開始收集資料(房貸餘額)'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='開始收集資料'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='讀入資料 - read.table'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='看看讀入結果'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title=''>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='再看一次'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Transformation - 資料處理'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title=''>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title=''>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title=''>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='練習-挑選欄位(1/2)'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='練習-挑選欄位(2/2)'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='練習-挑選<code>資料</code>'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='練習-增加<code>特徵</code>欄位(1/2)'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='練習-增加<code>特徵</code>欄位(2/2)'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='練習-<code>排序</code>資料(1/2)'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='練習-<code>排序</code>資料(2/2)'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='練習時間'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='學習，實作，觀察 STEP2'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title=''>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='ETL <code>第二步</code>'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='開始收集資料(GDP)'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='開始收集資料(GDP)'>
+         44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title=''>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title=''>
+         46
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title=''>
+         47
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='資料清理'>
+         48
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='去除前後不相干的資料列'>
+         49
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='去除rownames'>
+         50
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='轉移文字格式'>
+         51
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='抽離年份與季'>
+         52
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='練習時間'>
+         53
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title=''>
+         54
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=55 title=''>
+         55
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=56 title='學習，實作，觀察 STEP3'>
+         56
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=57 title='ETL <code>第三步</code>'>
+         57
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=58 title='學習，實作，觀察 STEP4'>
+         58
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='ETL <code>最後一步</code>'>
+         59
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='資料整併'>
+         60
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='資料整併流程'>
+         61
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title='資料彙總'>
+         62
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='練習-資料<code>彙總</code>(1/2)'>
+         63
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title=''>
+         64
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='練習-資料<code>彙總</code>(2/2)'>
+         65
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=66 title='彙總函數 summarise'>
+         66
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=67 title='mean'>
+         67
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=68 title='n'>
+         68
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=69 title='n_distinct'>
+         69
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=70 title='max'>
+         70
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=71 title='first, last'>
+         71
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=72 title='複雜一點的函數'>
+         72
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=73 title='nth'>
+         73
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=74 title='練習題目- 解答(1/2)'>
+         74
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=75 title='練習題目- 解答(2/2)'>
+         75
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=76 title='接下來比較難，真的!!!!'>
+         76
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=77 title='結合表格'>
+         77
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=78 title='圖解<code>結合表格</code>'>
+         78
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=79 title='join講解前資料準備'>
+         79
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=80 title='join講解前資料準備'>
+         80
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=81 title='dplyr 介紹 - left_join'>
+         81
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=82 title='dplyr 介紹 - inner_join'>
+         82
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=83 title='實際問題 - 練習題'>
+         83
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=84 title='請問，這兩張表該怎麼結合比較好?用誰當第一參數?'>
+         84
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=85 title='練習'>
+         85
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=86 title='最後一里路'>
+         86
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=87 title='接下來我們應該做(1/3) - 畫圖'>
+         87
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=88 title='接下來我們應該做(2/3) - 解釋'>
+         88
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=89 title='接下來我們應該做(3/3) - 報告'>
+         89
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=90 title='Review'>
+         90
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=91 title='我們做了什麼?'>
+         91
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=92 title='額外延伸主題'>
+         92
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=93 title='自動化'>
+         93
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=94 title='從網路讀檔案'>
+         94
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=95 title='Speical'>
+         95
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=96 title='Topics'>
+         96
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=97 title='Reference'>
+         97
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
 
-<!-- Maybe a font from http://www.google.com/webfonts ? -->
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-
-<style>
-  html, .view body { background-color: black; counter-reset: slideidx; }
-  body, .view section { background-color: white; border-radius: 12px }
-  /* A section is a slide. It's size is 800x600, and this will never change */
-  section, .view head > title {
-      /* The font from Google */
-      font-family: 'Oswald', arial, serif;
-      font-size: 30px;
-  }
-
-  .view section:after {
-    counter-increment: slideidx;
-    content: counter(slideidx, decimal-leading-zero);
-    position: absolute; bottom: -80px; right: 100px;
-    color: white;
-  }
-
-  .view head > title {
-    color: white;
-    text-align: center;
-    margin: 1em 0 1em 0;
-  }
-
-  h1, h2 {
-    margin-top: 200px;
-    text-align: center;
-    font-size: 80px;
-  }
-  h3 {
-    margin: 100px 0 50px 100px;
-  }
-
-  ul {
-      margin: 50px 200px;
-  }
-
-  p {
-    margin: 75px;
-    font-size: 50px;
-  }
-
-  blockquote {
-    height: 100%;
-    background-color: black;
-    color: white;
-    font-size: 60px;
-    padding: 50px;
-  }
-  blockquote:before {
-    content: open-quote;
-  }
-  blockquote:after {
-    content: close-quote;
-  }
-
-  /* Figures are displayed full-page, with the caption
-     on top of the image/video */
-  figure {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-  }
-  figure > * {
-    position: absolute;
-  }
-  figure > img, figure > video {
-    width: 100%; height: 100%;
-  }
-  figcaption {
-    margin: 70px;
-    font-size: 50px;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 40px;
-    text-align: right;
-    background-color: #F3F4F8;
-    border-top: 1px solid #CCC;
-  }
-
-  /* Transition effect */
-  /* Feel free to change the transition effect for original
-     animations. See here:
-     https://developer.mozilla.org/en/CSS/CSS_transitions
-     How to use CSS3 Transitions: */
-  section {
-    -moz-transition: left 400ms linear 0s;
-    -webkit-transition: left 400ms linear 0s;
-    -ms-transition: left 400ms linear 0s;
-    transition: left 400ms linear 0s;
-  }
-  .view section {
-    -moz-transition: none;
-    -webkit-transition: none;
-    -ms-transition: none;
-    transition: none;
-  }
-
-  .view section[aria-selected] {
-    border: 5px red solid;
-  }
-
-  /* Before */
-  section { left: -150%; }
-  /* Now */
-  section[aria-selected] { left: 0; }
-  /* After */
-  section[aria-selected] ~ section { left: +150%; }
-
-  /* Incremental elements */
-
-  /* By default, visible */
-  .incremental > * { opacity: 1; }
-
-  /* The current item */
-  .incremental > *[aria-selected] { opacity: 1; }
-
-  /* The items to-be-selected */
-  .incremental > *[aria-selected] ~ * { opacity: 0; }
-
-  /* The progressbar, at the bottom of the slides, show the global
-     progress of the presentation. */
-  #progress-bar {
-    height: 2px;
-    background: #AAA;
-  }
-</style>
-
-<!--  dzslides core
-#
-#
-#     __  __  __       .  __   ___  __
-#    |  \  / /__` |    | |  \ |__  /__`
-#    |__/ /_ .__/ |___ | |__/ |___ .__/ core :€
-#
-#
-# The following block of code is not supposed to be edited.
-# But if you want to change the behavior of these slides,
-# feel free to hack it!
-#
--->
-
-<div id="progress-bar"></div>
-
-<!-- Default Style -->
-<style>
-  * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  [role="note"] { display: none; }
-  body {
-    width: 800px; height: 600px;
-    margin-left: -400px; margin-top: -300px;
-    position: absolute; top: 50%; left: 50%;
-    overflow: hidden;
-    display: none;
-  }
-  .view body {
-    position: static;
-    margin: 0; padding: 0;
-    width: 100%; height: 100%;
-    display: inline-block;
-    overflow: visible; overflow-x: hidden;
-    /* undo Dz.onresize */
-    transform: none !important;
-    -moz-transform: none !important;
-    -webkit-transform: none !important;
-    -o-transform: none !important;
-    -ms-transform: none !important;
-  }
-  .view head, .view head > title { display: block }
-  section {
-    position: absolute;
-    pointer-events: none;
-    width: 100%; height: 100%;
-  }
-  .view section {
-    pointer-events: auto;
-    position: static;
-    width: 800px; height: 600px;
-    margin: -150px -200px;
-    float: left;
-
-    transform: scale(.4);
-    -moz-transform: scale(.4);
-    -webkit-transform: scale(.4);
-    -o-transform: scale(.4);
-    -ms-transform: scale(.4);
-  }
-  .view section > * { pointer-events: none; }
-  section[aria-selected] { pointer-events: auto; }
-  html { overflow: hidden; }
-  html.view { overflow: visible; }
-  body.loaded { display: block; }
-  .incremental {visibility: hidden; }
-  .incremental[active] {visibility: visible; }
-  #progress-bar{
-    bottom: 0;
-    position: absolute;
-    -moz-transition: width 400ms linear 0s;
-    -webkit-transition: width 400ms linear 0s;
-    -ms-transition: width 400ms linear 0s;
-    transition: width 400ms linear 0s;
-  }
-  .view #progress-bar {
-    display: none;
-  }
-</style>
-
-<script>
-  var Dz = {
-    remoteWindows: [],
-    idx: -1,
-    step: 0,
-    html: null,
-    slides: null,
-    progressBar : null,
-    params: {
-      autoplay: "1"
-    }
-  };
-
-  Dz.init = function() {
-    document.body.className = "loaded";
-    this.slides = Array.prototype.slice.call($$("body > section"));
-    this.progressBar = $("#progress-bar");
-    this.html = document.body.parentNode;
-    this.setupParams();
-    this.onhashchange();
-    this.setupTouchEvents();
-    this.onresize();
-    this.setupView();
-  }
-
-  Dz.setupParams = function() {
-    var p = window.location.search.substr(1).split('&');
-    p.forEach(function(e, i, a) {
-      var keyVal = e.split('=');
-      Dz.params[keyVal[0]] = decodeURIComponent(keyVal[1]);
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
     });
-  // Specific params handling
-    if (!+this.params.autoplay)
-      $$.forEach($$("video"), function(v){ v.controls = true });
-  }
-
-  Dz.onkeydown = function(aEvent) {
-    // Don't intercept keyboard shortcuts
-    if (aEvent.altKey
-      || aEvent.ctrlKey
-      || aEvent.metaKey
-      || aEvent.shiftKey) {
-      return;
-    }
-    if ( aEvent.keyCode == 37 // left arrow
-      || aEvent.keyCode == 38 // up arrow
-      || aEvent.keyCode == 33 // page up
-    ) {
-      aEvent.preventDefault();
-      this.back();
-    }
-    if ( aEvent.keyCode == 39 // right arrow
-      || aEvent.keyCode == 40 // down arrow
-      || aEvent.keyCode == 34 // page down
-    ) {
-      aEvent.preventDefault();
-      this.forward();
-    }
-    if (aEvent.keyCode == 35) { // end
-      aEvent.preventDefault();
-      this.goEnd();
-    }
-    if (aEvent.keyCode == 36) { // home
-      aEvent.preventDefault();
-      this.goStart();
-    }
-    if (aEvent.keyCode == 32) { // space
-      aEvent.preventDefault();
-      this.toggleContent();
-    }
-    if (aEvent.keyCode == 70) { // f
-      aEvent.preventDefault();
-      this.goFullscreen();
-    }
-    if (aEvent.keyCode == 79) { // o
-      aEvent.preventDefault();
-      this.toggleView();
-    }
-  }
-
-  /* Touch Events */
-
-  Dz.setupTouchEvents = function() {
-    var orgX, newX;
-    var tracking = false;
-
-    var db = document.body;
-    db.addEventListener("touchstart", start.bind(this), false);
-    db.addEventListener("touchmove", move.bind(this), false);
-
-    function start(aEvent) {
-      aEvent.preventDefault();
-      tracking = true;
-      orgX = aEvent.changedTouches[0].pageX;
-    }
-
-    function move(aEvent) {
-      if (!tracking) return;
-      newX = aEvent.changedTouches[0].pageX;
-      if (orgX - newX > 100) {
-        tracking = false;
-        this.forward();
-      } else {
-        if (orgX - newX < -100) {
-          tracking = false;
-          this.back();
-        }
-      }
-    }
-  }
-
-  Dz.setupView = function() {
-    document.body.addEventListener("click", function ( e ) {
-      if (!Dz.html.classList.contains("view")) return;
-      if (!e.target || e.target.nodeName != "SECTION") return;
-
-      Dz.html.classList.remove("view");
-      Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
-    }, false);
-  }
-
-  /* Adapt the size of the slides to the window */
-
-  Dz.onresize = function() {
-    var db = document.body;
-    var sx = db.clientWidth / window.innerWidth;
-    var sy = db.clientHeight / window.innerHeight;
-    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
-
-    db.style.MozTransform = transform;
-    db.style.WebkitTransform = transform;
-    db.style.OTransform = transform;
-    db.style.msTransform = transform;
-    db.style.transform = transform;
-  }
-
-
-  Dz.getNotes = function(aIdx) {
-    var s = $("section:nth-of-type(" + aIdx + ")");
-    var d = s.$("[role='note']");
-    return d ? d.innerHTML : "";
-  }
-
-  Dz.onmessage = function(aEvent) {
-    var argv = aEvent.data.split(" "), argc = argv.length;
-    argv.forEach(function(e, i, a) { a[i] = decodeURIComponent(e) });
-    var win = aEvent.source;
-    if (argv[0] === "REGISTER" && argc === 1) {
-      this.remoteWindows.push(win);
-      this.postMsg(win, "REGISTERED", document.title, this.slides.length);
-      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
-      return;
-    }
-    if (argv[0] === "BACK" && argc === 1)
-      this.back();
-    if (argv[0] === "FORWARD" && argc === 1)
-      this.forward();
-    if (argv[0] === "START" && argc === 1)
-      this.goStart();
-    if (argv[0] === "END" && argc === 1)
-      this.goEnd();
-    if (argv[0] === "TOGGLE_CONTENT" && argc === 1)
-      this.toggleContent();
-    if (argv[0] === "SET_CURSOR" && argc === 2)
-      window.location.hash = "#" + argv[1];
-    if (argv[0] === "GET_CURSOR" && argc === 1)
-      this.postMsg(win, "CURSOR", this.idx + "." + this.step);
-    if (argv[0] === "GET_NOTES" && argc === 1)
-      this.postMsg(win, "NOTES", this.getNotes(this.idx));
-  }
-
-  Dz.toggleContent = function() {
-    // If a Video is present in this new slide, play it.
-    // If a Video is present in the previous slide, stop it.
-    var s = $("section[aria-selected]");
-    if (s) {
-      var video = s.$("video");
-      if (video) {
-        if (video.ended || video.paused) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      }
-    }
-  }
-
-  Dz.setCursor = function(aIdx, aStep) {
-    // If the user change the slide number in the URL bar, jump
-    // to this slide.
-    aStep = (aStep != 0 && typeof aStep !== "undefined") ? "." + aStep : ".0";
-    window.location.hash = "#" + aIdx + aStep;
-  }
-
-  Dz.onhashchange = function() {
-    var cursor = window.location.hash.split("#"),
-        newidx = 1,
-        newstep = 0;
-    if (cursor.length == 2) {
-      newidx = ~~cursor[1].split(".")[0];
-      newstep = ~~cursor[1].split(".")[1];
-      if (newstep > Dz.slides[newidx - 1].$$('.incremental > *').length) {
-        newstep = 0;
-        newidx++;
-      }
-    }
-    this.setProgress(newidx, newstep);
-    if (newidx != this.idx) {
-      this.setSlide(newidx);
-    }
-    if (newstep != this.step) {
-      this.setIncremental(newstep);
-    }
-    for (var i = 0; i < this.remoteWindows.length; i++) {
-      this.postMsg(this.remoteWindows[i], "CURSOR", this.idx + "." + this.step);
-    }
-  }
-
-  Dz.back = function() {
-    if (this.idx == 1 && this.step == 0) {
-      return;
-    }
-    if (this.step == 0) {
-      this.setCursor(this.idx - 1,
-                     this.slides[this.idx - 2].$$('.incremental > *').length);
-    } else {
-      this.setCursor(this.idx, this.step - 1);
-    }
-  }
-
-  Dz.forward = function() {
-    if (this.idx >= this.slides.length &&
-        this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
-        return;
-    }
-    if (this.step >= this.slides[this.idx - 1].$$('.incremental > *').length) {
-      this.setCursor(this.idx + 1, 0);
-    } else {
-      this.setCursor(this.idx, this.step + 1);
-    }
-  }
-
-  Dz.goStart = function() {
-    this.setCursor(1, 0);
-  }
-
-  Dz.goEnd = function() {
-    var lastIdx = this.slides.length;
-    var lastStep = this.slides[lastIdx - 1].$$('.incremental > *').length;
-    this.setCursor(lastIdx, lastStep);
-  }
-
-  Dz.toggleView = function() {
-    this.html.classList.toggle("view");
-
-    if (this.html.classList.contains("view")) {
-      $("section[aria-selected]").scrollIntoView(true);
-    }
-  }
-
-  Dz.setSlide = function(aIdx) {
-    this.idx = aIdx;
-    var old = $("section[aria-selected]");
-    var next = $("section:nth-of-type("+ this.idx +")");
-    if (old) {
-      old.removeAttribute("aria-selected");
-      var video = old.$("video");
-      if (video) {
-        video.pause();
-      }
-    }
-    if (next) {
-      next.setAttribute("aria-selected", "true");
-      if (this.html.classList.contains("view")) {
-        next.scrollIntoView();
-      }
-      var video = next.$("video");
-      if (video && !!+this.params.autoplay) {
-        video.play();
-      }
-    } else {
-      // That should not happen
-      this.idx = -1;
-      // console.warn("Slide doesn't exist.");
-    }
-  }
-
-  Dz.setIncremental = function(aStep) {
-    this.step = aStep;
-    var old = this.slides[this.idx - 1].$('.incremental > *[aria-selected]');
-    if (old) {
-      old.removeAttribute('aria-selected');
-    }
-    var incrementals = $$('.incremental');
-    if (this.step <= 0) {
-      $$.forEach(incrementals, function(aNode) {
-        aNode.removeAttribute('active');
-      });
-      return;
-    }
-    var next = this.slides[this.idx - 1].$$('.incremental > *')[this.step - 1];
-    if (next) {
-      next.setAttribute('aria-selected', true);
-      next.parentNode.setAttribute('active', true);
-      var found = false;
-      $$.forEach(incrementals, function(aNode) {
-        if (aNode != next.parentNode)
-          if (found)
-            aNode.removeAttribute('active');
-          else
-            aNode.setAttribute('active', true);
-        else
-          found = true;
-      });
-    } else {
-      setCursor(this.idx, 0);
-    }
-    return next;
-  }
-
-  Dz.goFullscreen = function() {
-    var html = $('html'),
-        requestFullscreen = html.requestFullscreen || html.requestFullScreen || html.mozRequestFullScreen || html.webkitRequestFullScreen;
-    if (requestFullscreen) {
-      requestFullscreen.apply(html);
-    }
-  }
-  
-  Dz.setProgress = function(aIdx, aStep) {
-    var slide = $("section:nth-of-type("+ aIdx +")");
-    if (!slide)
-      return;
-    var steps = slide.$$('.incremental > *').length + 1,
-        slideSize = 100 / (this.slides.length - 1),
-        stepSize = slideSize / steps;
-    this.progressBar.style.width = ((aIdx - 1) * slideSize + aStep * stepSize) + '%';
-  }
-  
-  Dz.postMsg = function(aWin, aMsg) { // [arg0, [arg1...]]
-    aMsg = [aMsg];
-    for (var i = 2; i < arguments.length; i++)
-      aMsg.push(encodeURIComponent(arguments[i]));
-    aWin.postMessage(aMsg.join(" "), "*");
-  }
-  
-  function init() {
-    Dz.init();
-    window.onkeydown = Dz.onkeydown.bind(Dz);
-    window.onresize = Dz.onresize.bind(Dz);
-    window.onhashchange = Dz.onhashchange.bind(Dz);
-    window.onmessage = Dz.onmessage.bind(Dz);
-  }
-
-  window.onload = init;
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
 </script>
-
-
-<script> // Helpers
-  if (!Function.prototype.bind) {
-    Function.prototype.bind = function (oThis) {
-
-      // closest thing possible to the ECMAScript 5 internal IsCallable
-      // function 
-      if (typeof this !== "function")
-      throw new TypeError(
-        "Function.prototype.bind - what is trying to be fBound is not callable"
-      );
-
-      var aArgs = Array.prototype.slice.call(arguments, 1),
-          fToBind = this,
-          fNOP = function () {},
-          fBound = function () {
-            return fToBind.apply( this instanceof fNOP ? this : oThis || window,
-                   aArgs.concat(Array.prototype.slice.call(arguments)));
-          };
-
-      fNOP.prototype = this.prototype;
-      fBound.prototype = new fNOP();
-
-      return fBound;
-    };
-  }
-
-  var $ = (HTMLElement.prototype.$ = function(aQuery) {
-    return this.querySelector(aQuery);
-  }).bind(document);
-
-  var $$ = (HTMLElement.prototype.$$ = function(aQuery) {
-    return this.querySelectorAll(aQuery);
-  }).bind(document);
-
-  $$.forEach = function(nodeList, fun) {
-    Array.prototype.forEach.call(nodeList, fun);
-  }
-
-</script>
-<!-- vim: set fdm=marker: -->
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>   
+  </html>

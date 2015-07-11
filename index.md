@@ -4,7 +4,7 @@ subtitle    :
 author      : Cheng Yu Lin (aha)
 job         : 
 license     : by-sa
-framework   : dzslides       # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 ext_widgets : {rCharts: libraries/nvd3}
