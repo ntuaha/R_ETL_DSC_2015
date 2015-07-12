@@ -593,7 +593,7 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 
 ```r
 #GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
-Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+GDP = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
 getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/GDP.txt")
 ))
