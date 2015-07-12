@@ -384,8 +384,13 @@ library(DSC2015Tutorial)
 
 <p>或是</p>
 
-<pre><code class="r">library(DSC2014Tutorial)
-ETL_file(&quot;cl_info_other.csv&quot;)
+<pre><code class="r">#library(DSC2014Tutorial)
+#ETL_file(&quot;cl_info_other.csv&quot;)
+Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL(&quot;https://github.com/ntuaha/R_ETL_DSC_2015/raw/
+      gh-pages/cl_info_other.csv&quot;)
+))
 </code></pre>
 
   </article>

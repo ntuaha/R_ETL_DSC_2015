@@ -227,8 +227,13 @@ slides("ETL")
 或是
 
 ```r
-library(DSC2014Tutorial)
-ETL_file("cl_info_other.csv")
+#library(DSC2014Tutorial)
+#ETL_file("cl_info_other.csv")
+Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
+      gh-pages/cl_info_other.csv")
+))
 ```
 
 --- 
