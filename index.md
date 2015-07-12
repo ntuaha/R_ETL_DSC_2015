@@ -1192,7 +1192,7 @@ fileEncoding="UTF-8")
 
 --- .segue bg:blue
 
-## Speical
+## ETL還有什麼呢?
 
 ---
 
@@ -1203,7 +1203,9 @@ fileEncoding="UTF-8")
 3. 其他的資料源
    - 結構化資料
    - 非結構化資料
-4. 培養對資料的品味
+   
+--- .segue bg:LightSeaGreen
+## 工商服務時間
 
 ---
 
@@ -1211,3 +1213,4 @@ fileEncoding="UTF-8")
 
 1. [http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 2. [http://cran.r-project.org/web/packages/dplyr/dplyr.pdf](http://cran.r-project.org/web/packages/dplyr/dplyr.pdf)
+2. [https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
