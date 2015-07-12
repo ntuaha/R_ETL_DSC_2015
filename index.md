@@ -33,6 +33,17 @@ mode        : selfcontained # {standalone, draft}
 - 會議室暖桌助襄
 
 
+---
+
+## 為了大家能一起同樂，請大家把swirl可課程同步導入
+
+```
+library(swirl)
+install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/gh-pages/DSC2015.zip", multi = FALSE)
+swirl()
+```
+
+
 --- &vcenter
 
 <q>在開始本次的課程之前，身為一個`資料科學家`，第一步是了解問題</q>
