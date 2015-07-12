@@ -617,7 +617,7 @@ GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
 
 
 ```
-GDP_part = GDP[5:136,]
+GDP_part = GDP[5:135,]
 ```
 
 ### 別忘了改上欄位名稱
