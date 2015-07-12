@@ -35,11 +35,12 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 
-## 為了大家能一起同樂，請大家把swirl可課程同步導入
+為了大家能一起同樂，請大家先把swirl課程同步導入
 
 ```
 library(swirl)
-install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/gh-pages/DSC2015.zip", multi = FALSE)
+install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
+      gh-pages/DSC2015.zip", multi = FALSE)
 swirl()
 ```
 
