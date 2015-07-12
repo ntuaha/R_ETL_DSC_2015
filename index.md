@@ -229,10 +229,10 @@ slides("ETL")
 ```r
 #library(DSC2014Tutorial)
 #ETL_file("cl_info_other.csv")
+library(RCurl)
 Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
-      gh-pages/cl_info_other.csv")
+getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
 ))
 ```
 
@@ -242,7 +242,11 @@ getURL("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
 
 至少要記得的 `read.table`
 ```
-Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
+#Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
+Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
+))
 ```
 - 輸出形態為`Data Frame`
 - file 就是指讀入的檔案路徑
@@ -588,7 +592,11 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 <q>答案</q>
 
 ```r
-GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
+#GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
+Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/GDP.txt")
+))
 ```
 
 --- .quote

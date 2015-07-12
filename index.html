@@ -386,10 +386,10 @@ library(DSC2015Tutorial)
 
 <pre><code class="r">#library(DSC2014Tutorial)
 #ETL_file(&quot;cl_info_other.csv&quot;)
+library(RCurl)
 Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL(&quot;https://github.com/ntuaha/R_ETL_DSC_2015/raw/
-      gh-pages/cl_info_other.csv&quot;)
+getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)
 ))
 </code></pre>
 
@@ -404,7 +404,11 @@ getURL(&quot;https://github.com/ntuaha/R_ETL_DSC_2015/raw/
   <article data-timings="">
     <p>至少要記得的 <code>read.table</code></p>
 
-<pre><code>Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
+<pre><code>#Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
+Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)
+))
 </code></pre>
 
 <ul>
@@ -839,7 +843,11 @@ str(Cl_info_part)
   <article data-timings="">
     <p><q>答案</q></p>
 
-<pre><code class="r">GDP = read.table(file=ETL_file(&quot;GDP.txt&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=F)
+<pre><code class="r">#GDP = read.table(file=ETL_file(&quot;GDP.txt&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=F)
+Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
+file= textConnection(
+getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/GDP.txt&quot;)
+))
 </code></pre>
 
   </article>
