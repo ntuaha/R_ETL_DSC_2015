@@ -98,7 +98,7 @@ mode        : selfcontained # {standalone, draft}
 
 ## 我們ETL會用到的有 
 
-- `dplyr` 可用`類似SQL方法`操作data frome
+- `dplyr` 可用`類似SQL方法`操作data frame
 - `xts` 處理`時間`格式好用的套件
 - `gdata` 可以處理`Excel 2007`以上的文件
 
@@ -571,7 +571,7 @@ GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
 <q>輸入`View(GDP)`觀察`GDP`會發現怎麼前後有很多列的資料是不要的</q>
 <img src = './resources/figures/R_ETL_2.png' ></img>
 
-### 好亂，我想`整理`好這個data frome
+### 好亂，我想`整理`好這個data frame
 
 --- &twocol_dynamic w1:38% w2:58%
 
