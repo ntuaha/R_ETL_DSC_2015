@@ -208,7 +208,6 @@ getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info
 
 ## 讀入資料 - read.table
 
-至少要記得的 `read.table`
 ```
 Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
 ```
