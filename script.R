@@ -8,7 +8,7 @@ slidify("index.Rmd");
 publish(user = "ntuaha", repo = "R_ETL_DSC_2015", host = 'github')
 
 #library(swirl)
-#install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/gh-pages/DSC2015.zip", multi = TRUE)
+#rm(list=ls());delete_progress("aha");uninstall_all_courses();install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/gh-pages/DSC2015.zip", multi = FALSE)
 #swirl()
 #會有一些bug
 #Error in if (body$content == "") { :

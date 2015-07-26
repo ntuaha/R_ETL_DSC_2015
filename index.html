@@ -98,6 +98,9 @@
     <p>為了大家能一起同樂，請大家先把swirl課程同步導入</p>
 
 <pre><code>library(swirl)
+#新的package
+install.packages(c(&quot;swirl&quot;, &quot;dplyr&quot;, &quot;ggplot2&quot;), 
+repos = &quot;http://taiwanrusergroup.github.io/R&quot;)
 install_course_url(&quot;https://github.com/ntuaha/R_ETL_DSC_2015/raw/
       gh-pages/DSC2015.zip&quot;, multi = FALSE)
 swirl()

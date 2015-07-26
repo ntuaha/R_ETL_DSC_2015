@@ -39,6 +39,9 @@ mode        : selfcontained # {standalone, draft}
 
 ```
 library(swirl)
+#新的package
+install.packages(c("swirl", "dplyr", "ggplot2"), 
+repos = "http://taiwanrusergroup.github.io/R")
 install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
       gh-pages/DSC2015.zip", multi = FALSE)
 swirl()
