@@ -187,7 +187,6 @@ swirl()
 <li>GDP</li>
 <li>房貸餘額</li>
 <li>股價</li>
-<li>新聞</li>
 <li>地價資訊</li>
 </ol>
 
@@ -351,8 +350,7 @@ swirl()
 <pre><code class="r">library(RCurl)
 Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)
-))
+getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)))
 </code></pre>
 
   </article>
@@ -364,23 +362,22 @@ getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl
     <h2>讀入資料 - read.table</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code>Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
+    <pre><code class="r">Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
 </code></pre>
 
 <p>或</p>
 
-<pre><code>Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
+<pre><code class="r">Cl_info = read.table(sep=&quot;,&quot;, header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)
-))
+getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv&quot;)))
 </code></pre>
 
 <ul>
 <li>輸出形態為<code>Data Frame</code></li>
 <li>file 就是指讀入的檔案路徑</li>
 <li>sep 指的是欄位分割用的符號,通常csv檔案格式是透過<code>,</code>做分割</li>
-<li>stringsAsFactors 預設是<code>True</code>, 會讓讀入的字串都用Factor形態儲存，那麼資料就會轉為整數儲存與額外的對照表</li>
-<li>header 預設是<code>False</code>，表示第一行是不是表格標頭，作為輸出的dataframe欄位名的colnames</li>
+<li>stringsAsFactors 預設是<code>True</code>, 讓讀入的字串用Factor儲存，那麼資料就會轉為整數儲存與對照表</li>
+<li>header 預設是<code>False</code>，表示第一行是不是表格標頭，輸出的dataframe欄位名的colnames</li>
 </ul>
 
   </article>
@@ -785,8 +782,6 @@ str(Cl_info_part)
 <li>開啟後，<strong>另存新檔成csv檔</strong></li>
 <li>開回<code>RStudio</code> 開始處理資料</li>
 </ol>
-
-<p>或是<code>ETL_file(&quot;GDP.txt&quot;)</code></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -1598,7 +1593,7 @@ ggplot(see1, aes(time, ratio))+geom_smooth(method=&quot;loess&quot;) +
 
 <slide class="segue" id="slide-87" style="background:LightSeaGreen;">
   <hgroup>
-    <h2>海水退了就知道誰沒穿褲子，報告過了就知道有沒有料</h2>
+    <h2>海水退了就知道誰沒穿褲子</h2>
   </hgroup>
   <article data-timings="">
     
@@ -1606,7 +1601,17 @@ ggplot(see1, aes(time, ratio))+geom_smooth(method=&quot;loess&quot;) +
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-88" style="background:green;">
+<slide class="segue" id="slide-88" style="background:LightSeaGreen;">
+  <hgroup>
+    <h2>報告過了就知道你有沒有料</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue" id="slide-89" style="background:green;">
   <hgroup>
     <h2>額外延伸主題</h2>
   </hgroup>
@@ -1616,7 +1621,7 @@ ggplot(see1, aes(time, ratio))+geom_smooth(method=&quot;loess&quot;) +
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-89" style="background:;">
+<slide class="" id="slide-90" style="background:;">
   <hgroup>
     <h2>自動化</h2>
   </hgroup>
@@ -1647,7 +1652,7 @@ write.csv(iris_part,file=&quot;[想要的目錄]/GG.csv&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-90" style="background:;">
+<slide class="" id="slide-91" style="background:;">
   <hgroup>
     <h2>從網路讀檔案</h2>
   </hgroup>
@@ -1683,7 +1688,7 @@ fileEncoding=&quot;UTF-8&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-91" style="background:blue;">
+<slide class="segue" id="slide-92" style="background:blue;">
   <hgroup>
     <h2>ETL還有什麼呢?</h2>
   </hgroup>
@@ -1693,7 +1698,7 @@ fileEncoding=&quot;UTF-8&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-92" style="background:;">
+<slide class="" id="slide-93" style="background:;">
   <hgroup>
     <h2>Topics</h2>
   </hgroup>
@@ -1723,7 +1728,7 @@ fileEncoding=&quot;UTF-8&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue" id="slide-93" style="background:LightSeaGreen;">
+<slide class="segue" id="slide-94" style="background:LightSeaGreen;">
   <hgroup>
     <h2>工商服務時間</h2>
   </hgroup>
@@ -1733,7 +1738,7 @@ fileEncoding=&quot;UTF-8&quot;)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-94" style="background:;">
+<slide class="" id="slide-95" style="background:;">
   <hgroup>
     <h2>玉山銀行招生中</h2>
   </hgroup>
@@ -2275,50 +2280,56 @@ fileEncoding=&quot;UTF-8&quot;)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=87 title='海水退了就知道誰沒穿褲子，報告過了就知道有沒有料'>
+        data-slide=87 title='海水退了就知道誰沒穿褲子'>
          87
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=88 title='額外延伸主題'>
+        data-slide=88 title='報告過了就知道你有沒有料'>
          88
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=89 title='自動化'>
+        data-slide=89 title='額外延伸主題'>
          89
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=90 title='從網路讀檔案'>
+        data-slide=90 title='自動化'>
          90
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=91 title='ETL還有什麼呢?'>
+        data-slide=91 title='從網路讀檔案'>
          91
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=92 title='Topics'>
+        data-slide=92 title='ETL還有什麼呢?'>
          92
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=93 title='工商服務時間'>
+        data-slide=93 title='Topics'>
          93
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=94 title='玉山銀行招生中'>
+        data-slide=94 title='工商服務時間'>
          94
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=95 title='玉山銀行招生中'>
+         95
       </a>
     </li>
   </ul>

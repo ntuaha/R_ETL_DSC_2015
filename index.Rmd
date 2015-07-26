@@ -91,8 +91,7 @@ swirl()
  1. GDP
  2. 房貸餘額
  3. 股價
- 4. 新聞
- 5. 地價資訊
+ 4. 地價資訊
 
 *** =right
 ### `可能的來源?`
@@ -200,29 +199,27 @@ swirl()
 library(RCurl)
 Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
-))
+getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")))
 ```
 
 --- 
 
 ## 讀入資料 - read.table
 
-```
+```r
 Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
 ```
 或
-```
+```r
 Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
-getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
-))
+getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")))
 ```
 - 輸出形態為`Data Frame`
 - file 就是指讀入的檔案路徑
 - sep 指的是欄位分割用的符號,通常csv檔案格式是透過`,`做分割
-- stringsAsFactors 預設是`True`, 會讓讀入的字串都用Factor形態儲存，那麼資料就會轉為整數儲存與額外的對照表
-- header 預設是`False`，表示第一行是不是表格標頭，作為輸出的dataframe欄位名的colnames
+- stringsAsFactors 預設是`True`, 讓讀入的字串用Factor儲存，那麼資料就會轉為整數儲存與對照表
+- header 預設是`False`，表示第一行是不是表格標頭，輸出的dataframe欄位名的colnames
 
 --- 
 
@@ -549,7 +546,6 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 8. 開啟後，**另存新檔成csv檔**
 9. 開回`RStudio` 開始處理資料
 
-或是`ETL_file("GDP.txt")`
 
 --- &vcenter
 
@@ -1125,7 +1121,12 @@ ggplot(see1, aes(time, ratio))+geom_smooth(method="loess") +
 
 --- .segue bg:LightSeaGreen 
 
-## 海水退了就知道誰沒穿褲子，報告過了就知道有沒有料
+## 海水退了就知道誰沒穿褲子
+
+
+--- .segue bg:LightSeaGreen 
+
+## 報告過了就知道你有沒有料
 
 
 
