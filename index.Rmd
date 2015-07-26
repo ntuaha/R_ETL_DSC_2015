@@ -38,12 +38,12 @@ mode        : selfcontained # {standalone, draft}
 為了大家能一起同樂，請大家先把swirl課程同步導入
 
 ```
-library(swirl)
-#新的package
+#安裝library
 install.packages(c("swirl", "dplyr", "ggplot2"), 
 repos = "http://taiwanrusergroup.github.io/R")
-install_course_url("https://github.com/ntuaha/R_ETL_DSC_2015/raw/
-      gh-pages/DSC2015.zip", multi = FALSE)
+library(swirl)
+#檔案下載後安裝
+install_course_directory("~/Dropbox/Project/2015/03_DSC/2015_swirl/DSC2015");
 swirl()
 ```
 
