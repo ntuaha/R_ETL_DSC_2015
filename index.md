@@ -211,7 +211,10 @@ getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info
 至少要記得的 `read.table`
 ```
 Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
-#Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+```
+或
+```
+Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
 getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
 ))
@@ -560,7 +563,10 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 
 ```r
 GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
-#GDP = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+```
+或
+```r
+GDP = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
 getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/GDP.txt")
 ))
