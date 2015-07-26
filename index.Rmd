@@ -123,39 +123,6 @@ swirl()
 
 - `dplyr` 可用`類似SQL方法`操作data frame
 - `xts` 處理`時間`格式好用的套件
-- `gdata` 可以處理`Excel 2007`以上的文件
-
-
---- .quote
-
-<q>來上課的，有`福`了</q>
-
---- 
-
-## DSC的One Piece
-
-- `DSC2015Tutorial` R社群為了這次Tutorial製作的套件，所有的教材都在這了
-
-```
-deps <- available.packages("http://taiwanrusergroup.github.io/R/src/contrib")[1,"Imports"]
-pkgs <- strsplit(gsub("\\s", "", deps), ",")[[1]]
-for(i in seq_along(pkgs)) {
-  # You can change your favorite repository
-  if (require(pkgs[i], character.only = TRUE)) next
-  install.packages(pkgs[i], repo = "http://cran.csie.ntu.edu.tw")
-}
-install.packages('DSC2015Tutorial', 
-    repo = 'http://taiwanrusergroup.github.io/R', type = 'source')
-library(DSC2015Tutorial)
-```
-
-安裝之後, 輸入以下指令就可以打開投影片:
-
-```
-slides("ETL")
-```
-
-
 
 --- 
 
@@ -230,8 +197,6 @@ slides("ETL")
 或是
 
 ```r
-#library(DSC2014Tutorial)
-#ETL_file("cl_info_other.csv")
 library(RCurl)
 Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
@@ -245,8 +210,8 @@ getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info
 
 至少要記得的 `read.table`
 ```
-#Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
-Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
+#Cl_info = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
 getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info_other.csv")
 ))
@@ -292,7 +257,6 @@ str(Cl_info)
 
 
 ```
-library(DSC2014Tutorial)
 library(dplyr)
 Cl_info = read.table(file=ETL_file('cl_info_other.csv'),header=T,sep=",",stringsAsFactors=F)
 Cl_info_part = mutate(Cl_info,data_dt = as.POSIXct(data_dt),
@@ -595,8 +559,8 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 <q>答案</q>
 
 ```r
-#GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
-GDP = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
+GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
+#GDP = read.table(sep=",", header=TRUE, stringsAsFactors=F,           
 file= textConnection(
 getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/GDP.txt")
 ))
@@ -1151,6 +1115,16 @@ ggplot(see1, aes(time, ratio))+geom_smooth(method="loess") +
 *** =right
 
 <img src = './resources/figures/R_ETL_ETL_MAP.png' height="350px"></img>
+
+
+
+--- .segue bg:LightSeaGreen 
+
+## 海水退了就知道誰沒穿褲子，報告過了就知道有沒有料
+
+
+
+
 
 --- .segue bg:green
 
