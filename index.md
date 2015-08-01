@@ -228,7 +228,7 @@ getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info
 ## 讀入資料 - read.table
 
 ```r
-Cl_info = read.table(file="./cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
+Cl_info = read.table(file="./cl_info_other.csv",sep=",",stringsAsFactors=F,header=T)
 ```
 或
 ```r
