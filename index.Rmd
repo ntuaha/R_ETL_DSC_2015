@@ -578,7 +578,7 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 <q>答案</q>
 
 ```r
-GDP = read.table(file="./GDP.txt",sep=",",stringsAsFactors=F,header=F)
+GDP = read.table(file="./GDP.txt",sep=",",stringsAsFactors=F,header=T)
 ```
 或
 ```r
