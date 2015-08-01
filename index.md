@@ -37,15 +37,36 @@ mode        : selfcontained # {standalone, draft}
 
 為了大家能一起同樂，請大家先把swirl課程同步導入
 
-```
+```r
+#起手式
+source("http://taiwanrusergroup.github.io/R/init.R")
+
+#投影片
+library(DSC2015R)
+slide()
+請選 4 R ETL(aha)
+
 #安裝library
-install.packages(c("swirl", "dplyr", "ggplot2"), 
-repos = "http://taiwanrusergroup.github.io/R")
-library(swirl)
-#檔案下載後安裝
-install_course_directory("~/Dropbox/Project/2015/03_DSC/2015_swirl/DSC2015");
+library(DSC2015R)
+install_course()
+
+#開始swirl()
 swirl()
 ```
+
+---
+# 無法正常運作的話
+
+```r
+install.packages(c("swirl"), repos = "http://taiwanrusergroup.github.io/R")
+uninstall_all_courses()
+library(DSC2015R)
+install_course()
+swirl()
+```
+
+
+
 
 
 --- &vcenter
