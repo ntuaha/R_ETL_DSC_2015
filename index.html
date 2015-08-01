@@ -385,7 +385,7 @@ getURL(&quot;https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl
     <h2>讀入資料 - read.table</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">Cl_info = read.table(file=ETL_file(&quot;cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
+    <pre><code class="r">Cl_info = read.table(file=&quot;./cl_info_other.csv&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=T)
 </code></pre>
 
 <p>或</p>
@@ -454,7 +454,7 @@ str(Cl_info)
     <h3>將資料讀入</h3>
 
 <pre><code>library(dplyr)
-Cl_info = read.table(file=ETL_file(&#39;cl_info_other.csv&#39;),header=T,sep=&quot;,&quot;,stringsAsFactors=F)
+Cl_info = read.table(file=&#39;./cl_info_other.csv&#39;,header=T,sep=&quot;,&quot;,stringsAsFactors=F)
 Cl_info_part = mutate(Cl_info,data_dt = as.POSIXct(data_dt),
                  bank_code = as.factor(bank_code),etl_dt = as.POSIXct(etl_dt))
 View(Cl_info_part)
@@ -824,7 +824,7 @@ str(Cl_info_part)
   <article data-timings="">
     <p><q>答案</q></p>
 
-<pre><code class="r">GDP = read.table(file=ETL_file(&quot;GDP.txt&quot;),sep=&quot;,&quot;,stringsAsFactors=F,header=F)
+<pre><code class="r">GDP = read.table(file=&quot;./GDP.txt&quot;,sep=&quot;,&quot;,stringsAsFactors=F,header=F)
 </code></pre>
 
 <p>或</p>

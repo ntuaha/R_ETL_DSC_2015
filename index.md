@@ -228,7 +228,7 @@ getURL("https://raw.githubusercontent.com/ntuaha/R_ETL_DSC_2015/gh-pages/cl_info
 ## 讀入資料 - read.table
 
 ```r
-Cl_info = read.table(file=ETL_file("cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
+Cl_info = read.table(file="./cl_info_other.csv"),sep=",",stringsAsFactors=F,header=T)
 ```
 或
 ```r
@@ -278,7 +278,7 @@ str(Cl_info)
 
 ```
 library(dplyr)
-Cl_info = read.table(file=ETL_file('cl_info_other.csv'),header=T,sep=",",stringsAsFactors=F)
+Cl_info = read.table(file='./cl_info_other.csv',header=T,sep=",",stringsAsFactors=F)
 Cl_info_part = mutate(Cl_info,data_dt = as.POSIXct(data_dt),
                  bank_code = as.factor(bank_code),etl_dt = as.POSIXct(etl_dt))
 View(Cl_info_part)
@@ -578,7 +578,7 @@ Cl_info_part2 = mutate(Cl_info_part,time= as.POSIXct(data_dt))
 <q>答案</q>
 
 ```r
-GDP = read.table(file=ETL_file("GDP.txt"),sep=",",stringsAsFactors=F,header=F)
+GDP = read.table(file="./GDP.txt",sep=",",stringsAsFactors=F,header=F)
 ```
 或
 ```r
